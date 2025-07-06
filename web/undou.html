@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Undou</title>
+        <script src="undou.js"></script>
+        <link rel="stylesheet" href="undou.css" type="text/css">
+        <script type="text/javascript" src="/eel.js"></script>
+    </head>
+    <body>
+        <p><img src="diet_running_man.png" width="100px" height="120px"></p>
+        <select id="undou" style="text-align: center;">
+            <option value="running">ランニング</option>
+            <option value="radio1">ラジオ体操１</option>
+            <option value="radio2">ラジオ体操２</option>
+            <option value="walking">歩き</option>
+            <option value="climbing">登山</option>
+            <option value="cycling">サイクリング</option>
+            <option value="yoga">ヨガ</option>
+            <option value="stretch">ストレッチ</option>
+            <option value="swimming">水泳（クロール）</option>
+            <option value="badminton">バドミントン</option>
+            <option value="tennis">テニス</option>
+        </select>
+        <p>時間：<input type="text" id="data1" class="button2" size="5" value="">分
+            体重：<input type="text" id="data2" class="button2" size="5" value="">kg</p>
+        <p><input type="button" value="calcurate" class="button1" onclick="get_data()">
+        <input type="button" value="clear" class="button1" onclick="clear()"></p>
+        <p>目標カロリー:<input type="text" id="data3" size="5" value="">kcal</p>
+        <p>消費カロリー:<input type="text" id="output" size="5" value="">kcal</p>
+        <p id="word"></p>
+        <p>今日の感想</p>
+        <textarea type="text" id="impression" value=""></textarea>
+    </body>
+</html>
